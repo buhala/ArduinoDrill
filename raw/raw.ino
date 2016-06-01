@@ -27,7 +27,7 @@ void moveDrill(char axis,int direction, int steps, int delayReal){
   }
   if(axis=='z'){
      int step=STEPZ;
-     int direction=DIRZ;
+     int directionD=DIRZ;
   }
   if(direction==1){
      digitalWrite(directionD,HIGH);
