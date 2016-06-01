@@ -52,10 +52,12 @@ void loop(){
     int direction=Serial.readStringUntil('%').toInt();
     int steps=Serial.readStringUntil('%').toInt();
     int delay=Serial.readStringUntil('%').toInt();
+    /*
     Serial.println(axis);
     Serial.println(direction);
     Serial.println(steps);
     Serial.println(delay);
+    */
     moveDrill(axis,direction,steps,delay);
   }
 }
