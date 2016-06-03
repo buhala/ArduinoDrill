@@ -1,9 +1,9 @@
-#define DIRX 9
-#define STEPX 10
-#define DIRY 5
-#define STEPY 6
-#define DIRZ 2
-#define STEPZ 3
+#define DIRZ 10
+#define STEPZ 11
+#define DIRY 7
+#define STEPY 9 
+#define DIRX 2
+#define STEPX 3
 int i, a, choise;
 void setup() {
   pinMode(DIRX, OUTPUT);
@@ -26,8 +26,8 @@ void moveDrill(char axis,int direction, int steps, int delayReal){
       directionD=DIRY;
   }
   if(axis=='z'){
-     int step=STEPZ;
-     int directionD=DIRZ;
+     step=STEPZ;
+     directionD=DIRZ;
   }
   if(direction==1){
      digitalWrite(directionD,HIGH);

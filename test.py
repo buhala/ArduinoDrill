@@ -15,5 +15,7 @@ ser = serial.Serial("COM6")  # open first serial port
 time.sleep(2)
 i=moveMillimetres("x",1,1)
 ser.write(bytes(i, 'utf-8'))      # write a string
+time.sleep(1)
+ser.write(bytes(moveMillimetres("z",1,1), 'utf-8'))
 print("cancer")
 ser.close()             # close port
